@@ -12,20 +12,18 @@ import static global.Vars.winsToys;
 public class Main {
 
     public static void main(String[] args) {
-        //Сначала создаем произвольные игрушки
-        Toy cat = new Toy(1, "cat", 10, 20);
-        Toy dog = new Toy(2, "dog", 3, 5);
+        //Сначала создаем некоторые произвольные игрушки. К примеру:
+        Toy car = new Toy(1, "cat", 15, 20);
+        Toy dog = new Toy(2, "dog", 5, 5);
         Toy bird = new Toy(3, "bird", 4, 10);
-        Toy fish = new Toy(4, "fish", 10, 30);
-        Toy spiderman = new Toy(5, "spiderman", 6, 20);
+        Toy fish = new Toy(4, "fish", 12, 30);
         Toy superman = new Toy(6, "superman", 5, 8);
 
-        //добавляем созданные игрушки в список (в обычный непризовой) с новым весом
-        addToListWithNewWeight(cat, 5);
+        //добавляем созданные игрушки в список (в обычный непризовой) с новым весом:
+        addToListWithNewWeight(car, 5);
         addToListWithNewWeight(dog, 10);
         addToListWithNewWeight(bird, 21);
         addToListWithNewWeight(fish, 7);
-        addToListWithNewWeight(spiderman, 45);
         addToListWithNewWeight(superman, 67);
 
         //показываем что у нас в общем списке игрушек
